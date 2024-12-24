@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>IDEATE</title>
     <link rel="stylesheet" href="ideate.css">
     <link rel="icon" href="Image/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <nav class="fixed-top">
         <div class="leftnav">
             <div class="logo">
-                <a href="#home"><img src="./Image/ideatelogo.svg" alt="ideate logo" class="logo_image" ></a>
+                <div data-aos="zoom-in-up"
+                data-aos-duration="800">
+                    <a href="#home"><img src="./Image/ideatelogo.svg" alt="ideate logo" class="logo_image"></a>
+                </div>
             </div>
-            <!-- <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">,
-          <i class="fas fa-bars"></i>
-        </label> -->
             <ul>
                 <li><a href="#motto">Our Motto</a></li>
                 <li><a href="#about">What we do</a></li>
@@ -29,21 +30,30 @@
     </nav>
     <section class="body-bg" id="home">
         <div class="main">
-            <div class="ideate">IDEATE</div>
-            <div class="subtitle"><strong>MITSOC's First UI UX Club</strong></div>
+            <div data-aos="zoom-in-up">
+                <div class="ideate">IDEATE</div>
+            </div>
+            <div data-aos="zoom-in-up"
+            data-aos-duration="1500">
+                <div class="subtitle"><strong>MITSOE's First UI UX Club</strong></div>
+            </div>
         </div>
         <div class="second-container" id="motto">
-            <div class="motto" ><strong>OUR MOTTO</strong></div>
-            <div class="box">
-                <div class="motto_img"><img src="Image/mottobox.svg" alt="motto_box"></div>
+            <div class="motto"><strong>OUR MOTTO</strong></div>
+            <div data-aos="zoom-in-up">
+                <div class="box">
+                    <div class="motto_img"><img src="Image/mottobox.svg" alt="motto_box"></div>
+                </div>
             </div>
-            <div class="motto_text">
-                <center>
-                    <p class="motto_comma">“</p>
-                    <p class="motto_content">bridging the gap between creativity</p>
-                    <p class="motto_content">and technicality</p>
-                    <p class="motto_comma">”</p>
-                </center>
+            <div data-aos="zoom-in-up">
+                <div class="motto_text">
+                    <center>
+                        <p class="motto_comma">“</p>
+                        <p class="motto_content">bridging the gap between creativity</p>
+                        <p class="motto_content">and technicality</p>
+                        <p class="motto_comma">”</p>
+                    </center>
+                </div>
             </div>
         </div>
         <div class="what" id="about"><strong>WHAT WE DO</strong></div>
@@ -91,7 +101,7 @@
                 <div class="footlogo"> <a href="#home"><img src="Image/bulblogo.svg" alt="ideate logo"></a></div>
                 <div class="foottext">
                     <p class="about">IDEATE</p>
-                    <p class="soe">School of Computing,</p>
+                    <p class="soe">School of Engineering,</p>
                     <p class="soe">MIT ADT</p>
                 </div>
             </div>
@@ -99,17 +109,20 @@
                 <p class="socialtext">Our Socials</p>
                 <div class="social">
                     <div class="socialicon"> <img src="Image/linkedin.svg" alt="linkedin logo"></div>
-                    <p><a class="footerlink" href="https://www.linkedin.com/in/ideateclub/" target="_blank">ideateclub</a>
+                    <p><a class="footerlink" href="https://www.linkedin.com/in/ideateclub/"
+                            target="_blank">ideateclub</a>
                     </p>
                 </div>
                 <div class="social">
                     <div class="socialicon"> <img src="Image/insta.svg" alt="Instagram Logo"></div>
-                    <p><a class="footerlink" href="https://www.instagram.com/ideateclub/" target="_blank">@ideateclub</a>
+                    <p><a class="footerlink" href="https://www.instagram.com/ideateclub/"
+                            target="_blank">@ideateclub</a>
                     </p>
                 </div>
                 <div class="social">
                     <div class="socialicon"> <img src="Image/whatsapp.svg" alt="whatsapp logo"></div>
-                    <p><a class="footerlink" href="https://chat.whatsapp.com/D0HrFnnBQqjAjPu982EJEq" target="_blank">IDEATE Community</a>
+                    <p><a class="footerlink" href="https://chat.whatsapp.com/D0HrFnnBQqjAjPu982EJEq"
+                            target="_blank">IDEATE Community</a>
                     </p>
                 </div>
                 <div class="social">
@@ -123,7 +136,7 @@
                 <div class="contactdiv">
                     <div class="location"> <img src="Image/location.svg" alt="Location logo"></div>
                     <div class="locationtext">
-                        <p class="location2"><strong>School of Computing</strong></p>
+                        <p class="location2"><strong>School of Engineering</strong></p>
                         <p class="location3">MIT ADT University,</p>
                         <p class="location3">Loni Kalbhor</p>
                     </div>
@@ -137,7 +150,11 @@
             </div>
         </div>
     </footer>
-    <div class="bottom">Desgined and Developed by IDEATE</div>
+    <div class="bottom"> Desgined and Developed by IDEATE</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
